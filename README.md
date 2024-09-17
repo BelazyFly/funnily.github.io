@@ -1,2 +1,2 @@
-# lovely.github.io
-LovelyClient beta
+# funnily.github.io
+FunnilyClient beta
