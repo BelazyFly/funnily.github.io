@@ -1,0 +1,54 @@
+.faq-section {
+    padding: 20px 20px; /* 调整内边距，减少上下间距以改变整体高度 */
+    background-color: #1d1d1d; /* 深色背景 */
+    border-radius: 8px; /* 边角圆滑 */
+    max-width: 800px; /* 最大宽度 */
+    margin: 20px auto; /* 居中 */
+    max-height: 800px; /* 设置最大高度，可以根据内容来调整 */
+    overflow-y: auto; /* 如果内容超过最大高度时，添加滚动条 */
+}
+
+
+.faq-title {
+    text-align: center; /* 标题居中 */
+    font-size: 24px; /* 标题大小 */
+    margin-bottom: 20px; /* 底部间距 */
+    color: #ffffff; /* 标题颜色 */
+}
+
+.faq-item {
+    border: 1px solid #444444; /* 边框颜色 */
+    border-radius: 5px; /* 圆角 */
+    margin-bottom: 15px; /* 项目之间的间距 */
+    padding: 15px; /* 内边距 */
+    background-color: #2c2c2c; /* 项目背景颜色 */
+}
+
+.faq-question {
+    cursor: pointer; /* 鼠标悬停变成手型 */
+    display: flex; /* 使用flex布局 */
+    justify-content: space-between; /* 问题和箭头两边对齐 */
+    align-items: center; /* 垂直居中对齐 */
+    color: #ffffff; /* 问题文本颜色 */
+    transition: transform 0.3s ease; /* 设置旋转的过渡效果 */
+}
+
+.arrow {
+    transition: transform 0.3s ease; /* 设置旋转的过渡效果 */
+}
+
+/* 当标题展开时，箭头旋转180度 */
+.faq-answer.show + .arrow {
+    max-height: 300px; /* 修改为300px，以适应内容高度 */
+    margin-top: 10px; /* 展开后的间距 */
+    transform: rotate(180deg);
+}
+
+
+.faq-answer {
+    display: block; /* 初始显示状态为 block */
+    margin-top: 10px; /* 问题与答案之间的间距 */
+    max-height: 0; /* 默认最大高度为 0 */
+    overflow: hidden; /* 防止溢出 */
+    transition: max-height 0.3s ease, margin-top 0.3s ease; /* 添加过渡效果 */
+}

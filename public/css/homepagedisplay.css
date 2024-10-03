@@ -1,0 +1,91 @@
+/* 视频背景设置 */
+.video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* 使视频适应屏幕大小 */
+    z-index: -2; /* 确保视频在内容后面 */
+    /* 两个圆角，其他为直角 */
+    border-bottom-left-radius: 27px; /* 左下角圆角 */
+    border-bottom-right-radius: 27px; /* 右下角圆角 */
+}
+
+.video-overlay {
+    position: absolute; /* 绝对定位 */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* 黑色阴影，透明度为0.3 */
+    z-index: -1; /* 确保其在视频上方 */
+    border-bottom-left-radius: 27px; /* 左下角圆角 */
+    border-bottom-right-radius: 27px; /* 右下角圆角 */
+}
+
+
+#main {
+    position: relative;
+    display: flex;
+    flex-direction: column; /* 垂直方向上排列 */
+    justify-content: center; /* 垂直方向上居中 */
+    align-items: center; /* 水平方向上居中 */
+    width: 100%; /* 宽度自动适应 */
+    height: 91vh; /* 高度为视口高度 */
+    padding: 20px;
+    background: rgba(47, 47, 47, 0.8); /* 半透明背景 */
+    border-radius: 27px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 添加阴影 */
+    box-sizing: border-box; /* 包括内边距和边框在内 */
+    position: relative; /* 让背景视频相对定位 */
+    z-index: 1; /* 内容层 */
+}
+
+#main h2 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 400;
+    color: #fff;
+}
+
+.content {
+    position: absolute; /* 绝对定位 */
+    top: 50%; /* 从顶部偏移50% */
+    left: 50%; /* 从左侧偏移50% */
+    transform: translate(-50%, -50%); /* 平移以实现真正的居中 */
+    color: white; /* 根据需要设置文本颜色 */
+}
+
+
+
+/*#region scroller */
+.scroller {
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto;
+    top: 90%;
+    animation: bounce 2.2s cubic-bezier(0.25, 0.1, 0.25, 1.0) infinite; /* 使用更平滑的 cubic-bezier 缓动 */
+    background-color: rgba(72, 72, 72, 0.8);
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px); /* 保持原有的向上移动距离 */
+    }
+    60% {
+        transform: translateY(-5px); /* 向下移动较小的距离 */
+    }
+}

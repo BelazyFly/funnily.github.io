@@ -1,0 +1,39 @@
+header {
+    display: flex; /* 使用 flexbox 布局 */
+    justify-content: space-between; /* 使 logo 和导航之间的空间均匀分配 */
+    align-items: center; /* 垂直居中对齐 */
+    height: 32px;
+    background-color: #333; /* 页首背景色 */
+    color: white; /* 页首文本颜色 */
+    padding: 10px 20px; /* 内边距，增加左右边距 */
+}
+
+header .logo {
+    flex: 0.7; /* 让 logo 占据一部分空间 */
+    text-align: left; /* 左对齐 logo */
+}
+
+header nav {
+    flex: 2; /* 让导航占据另一部分空间 */
+}
+
+header nav ul {
+    list-style: none; /* 去掉列表项的默认样式 */
+    padding: 0; /* 去掉内边距 */
+    margin: 0; /* 去掉外边距 */
+    text-align: right; /* 右对齐导航项目 */
+}
+
+header nav ul li {
+    display: inline; /* 水平排列 */
+    margin: 0 7px; /* 每项之间的间隔 */
+}
+
+header nav ul li a {
+    color: white; /* 链接颜色 */
+    text-decoration: none; /* 去掉链接下划线 */
+}
+
+header nav ul li a:hover {
+    text-decoration: underline; /* 悬停时下划线效果 */
+}

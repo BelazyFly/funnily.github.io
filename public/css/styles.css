@@ -1,0 +1,26 @@
+/* 页面整体背景色 */
+body {
+    background-color: #1e1e1e; /* 深色背景 */
+    color: #ffffff; /* 白色字体 */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* 防止水平滚动 */
+}
+
+/* 阴影层 */
+#overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5); /* 半透明黑色 */
+    z-index: 10; /* 最高层，用于其他特效 */
+    display: none; /* 可根据需要显示 */
+}
+
+img {
+    pointer-events: none; /* 禁用图片的鼠标事件 */
+}
+

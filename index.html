@@ -1,165 +1,159 @@
-﻿<!DOCTYPE html>
-<html class="mclovely.cc">
-
-<head class="mclovely.cc">
-
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Lovely Clieny </title>
-	<link rel="icon" href="./static/img/favicon.ico">
-	<meta name="description" content="可爱客户端,UIcdn.....">
-	<meta name="keywords" content="可爱客户端,LovelyClieny,Lovely Clieny">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-	<link rel="stylesheet" href="./static/css/style.css">
-	<link rel="stylesheet" href="./static/css/root.css">
-	<link rel="stylesheet" type="text/css" href="./static/css/materialdesignicons.min.css">
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>深色主题网页</title>
+    <link rel="icon" href="public/icon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="public/css/styles.css"> <!-- 引入外部CSS -->
+    <link rel="stylesheet" href="public/css/homepagedisplay.css">
+    <link rel="stylesheet" href="public/css/infocontainer.css">
+    <link rel="stylesheet" href="public/css/frequentlyaskedquestion.css">
+    <link rel="stylesheet" href="public/css/header.css">
+    <link rel="stylesheet" href="public/css/footer.css">
 </head>
-
 <body>
-	<div id="BelazyFly-loading"><div id="BelazyFly-loading-center"></div></div>
-	<div class="BelazyFly-filter"></div>
-	<div class="BelazyFly-main">
-		<div class="BelazyFly-left">
-			<div class="logo" style="background-image: url(http://q.qlogo.cn/headimg_dl?dst_uin=1515423786&spec=640&img_type=png);">
-				<img style="position: absolute;top:-15%;left:-10%;width: 120%; aspect-ratio: 1/1;"
-					src="./static/img/logokuang.png">
-			</div>
-			<div class="left-div left-des">
-				<div class="left-des-item"><i class="mdi mdi-information-outline"></i>China-ShanDong</div>
-				<div class="left-des-item"><i class="mdi mdi-school"></i>Sias</div>
-			</div>
-			<div class="left-div left-tag">
-				<div class="left-tag-item">Java</div>
-				<div class="left-tag-item">Web</div>
-				<div class="left-tag-item">待 ...</div>
-			</div>
-			<div class="left-div left-time">
-				<ul id="line">
-					<li>
-						<div class="focus"></div>
-						<div>开始完善Client
-						</div>
-						<div>2024.7</div>
-					</li>
-					<li>
-						<div class="focus"></div>
-						<div>网页Web创建!
-						</div>
-						<div>2024.3</div>
-					</li>
-				</ul>
-			</div>
-		</div>
-		<div class="BelazyFly-right">
-			<header>
-				<div class="index-logo" style="background-image: url(http://q.qlogo.cn/headimg_dl?dst_uin=1515423786&spec=640&img_type=png);">
-					<img style="position: absolute;top:-15%;left:-10%;width: 120%; aspect-ratio: 1/1;"
-						src="./static/img/logokuang.png">
-				</div>
-				<div class="welcome">
-					hello I' m <span class="gradientText">
-						Lovely </span>
-				</div>
-				<div class="description">👦 <span class="purpleText">Full Stack</span> Developer
-				</div>
-				<div class="description">📝 The only way to do <span class="purpleText textBackground">great</span> is
-					to <span class="purpleText textBackground">love</span> what you do. </div>
+    <header>
+        <div class="logo">
+            <h1>FunnilyClient</h1> <!-- 网站名称 -->
+        </div>
+        <nav>
+            <ul class="collapsed">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="about.html">关于</a></li>
+                <li><a href="services.html">服务</a></li>
+                <li><a href="contact.html">联系</a></li>
+            </ul>
+        </nav>
+    </header>
 
-				<div class="iconContainer">
-					<a class="iconItem" onclick="" href="https://github.com/ZYYO666">
-						<i class="mdi mdi-github"></i>
-						<div class="iconTip">Github</div>
-					</a><a class="iconItem" onclick="" href="mailto:i@zyyo.net">
-						<i class="mdi mdi-email"></i>
-						<div class="iconTip">Mail</div>
-					</a><a class="iconItem" onclick="pop('./static/img/wx.jpg')" href="javascript:void(0)">
-						<i class="mdi mdi-qqchat"></i>
-						<div class="iconTip">QQ</div>
-					</a><a class="iconItem" onclick="pop('./static/img/wxzsm.jpg')" href="javascript:void(0)">
-						<i class="mdi mdi-thumb-up"></i>
-						<div class="iconTip">赞助</div>
-					</a>
-				</div>
+    <div id="main">
+        <!-- 视频背景 -->
+        <video class="video-background" autoplay muted loop><source src="public/video/You have been deceived!.mp4" type="video/mp4"></video>
+        <!-- 黑色阴影层 -->
+        <div class="video-overlay"></div>
 
-				<div class="tanChiShe">
-					<img id="tanChiShe" src="./static/svg/snake-Light.svg" alt="">
-				</div>
-			</header>
+        <!-- 页面内容 -->
+        <h2>欢迎来到 FunnilyClient 页面</h2>
+        <p>这是一个示例页面，展示视频，并可以在其上添加其他功能与内容。</p>
 
+        <!-- 下箭头按钮 -->
+        <div class="scroller" id="scroll-to-content">
+            <img class="arrow-down" width="18" height="7.5" src="public/images/arrow-down.png" alt="Go down">
+        </div>
 
+        <p><a href="#"></a>。</p>
+    </div>
 
+    <div id="overlay"></div> <!-- 添加阴影层 -->
+    
+    <!-- 新增的介绍内容 -->
+    <div class="infocontainer">
+        <div class="item">
+            <div class="header">
+                <svg class="icon-custom" xmlns="http://www.w3.org/2000/svg" width="16" height="16">
+                    <path d="M7.999 2.34a4.733 4.733 0 0 0-6.604 6.778c.904 5.762a1 1 0 0 0 1.4 0a5.915-5.77a4.733 4.733 0 0 0-6.77Zm5.208 5.348l-5.208 5 0.79-5 2-5 0.7a2.734 2.734 0 0 1 3.867-3.864 1.933 1.933 0 0 0 0 5.638a1.04 1.04 0 0 0 1.756 0a2.724 2.724 0 0 1 5.122 1.294 2.727 2.727 0 0 1-.792 1.923Z"></path>
+                </svg>
+                <h4 class="title">配置</h4>
+            </div>
+            <p class="description">Rise 是高度可配置的，易于使用，允许您绕过任何反作弊。</p>
+        </div>
+        <div class="item">
+            <div class="header">
+                <svg class="icon-custom" xmlns="http://www.w3.org/2000/svg" width="16" height="16">
+                    <path d="M7.999 2.34a4.733 4.733 0 0 0-6.604 6.778c.904 5.762a1 1 0 0 0 1.4 0a5.915-5.77a4.733 4.733 0 0 0-6.77Zm5.208 5.348l-5.208 5 0.79-5 2-5 0.7a2.734 2.734 0 0 1 3.867-3.864 1.933 1.933 0 0 0 0 5.638a1.04 1.04 0 0 0 1.756 0a2.724 2.724 0 0 1 5.122 1.294 2.727 2.727 0 0 1-.792 1.923Z"></path>
+                </svg>
+                <h4 class="title">适应</h4>
+            </div>
+            <p class="description">您可以在任何您想要的 Minecraft 版本上使用 Rise，从 1.8 到 1.19.4。</p>
+        </div>
+        <div class="item">
+            <div class="header">
+                <svg class="icon-custom" xmlns="http://www.w3.org/2000/svg" width="16" height="16">
+                    <path d="M7.999 2.34a4.733 4.733 0 0 0-6.604 6.778c.904 5.762a1 1 0 0 0 1.4 0a5.915-5.77a4.733 4.733 0 0 0-6.77Zm5.208 5.348l-5.208 5 0.79-5 2-5 0.7a2.734 2.734 0 0 1 3.867-3.864 1.933 1.933 0 0 0 0 5.638a1.04 1.04 0 0 0 1.756 0a2.724 2.724 0 0 1 5.122 1.294 2.727 2.727 0 0 1-.792 1.923Z"></path>
+                </svg>
+                <h4 class="title">正常运行时间</h4>
+            </div>
+            <p class="description">我们保证您 99.9% 的正常运行时间。</p>
+        </div>
+        
+        <div class="item">
+            <div class="header">
+                <svg class="icon-custom" xmlns="http://www.w3.org/2000/svg" width="16" height="16">
+                    <path d="M7.999 2.34a4.733 4.733 0 0 0-6.604 6.778c.904 5.762a1 1 0 0 0 1.4 0a5.915-5.77a4.733 4.733 0 0 0-6.77Zm5.208 5.348l-5.208 5 0.79-5 2-5 0.7a2.734 2.734 0 0 1 3.867-3.864 1.933 1.933 0 0 0 0 5.638a1.04 1.04 0 0 0 1.756 0a2.724 2.724 0 0 1 5.122 1.294 2.727 2.727 0 0 1-.792 1.923Z"></path>
+                </svg>
+                <h4 class="title">配置</h4>
+            </div>
+            <p class="description">Rise 是高度可配置的，易于使用，允许您绕过任何反作弊。</p>
+        </div>
+        <div class="item">
+            <div class="header">
+                <svg class="icon-custom" xmlns="http://www.w3.org/2000/svg" width="16" height="16">
+                    <path d="M7.999 2.34a4.733 4.733 0 0 0-6.604 6.778c.904 5.762a1 1 0 0 0 1.4 0a5.915-5.77a4.733 4.733 0 0 0-6.77Zm5.208 5.348l-5.208 5 0.79-5 2-5 0.7a2.734 2.734 0 0 1 3.867-3.864 1.933 1.933 0 0 0 0 5.638a1.04 1.04 0 0 0 1.756 0a2.724 2.724 0 0 1 5.122 1.294 2.727 2.727 0 0 1-.792 1.923Z"></path>
+                </svg>
+                <h4 class="title">适应</h4>
+            </div>
+            <p class="description">您可以在任何您想要的 Minecraft 版本上使用 Rise，从 1.8 到 1.19.4。</p>
+        </div>
+        <div class="item">
+            <div class="header">
+                <svg class="icon-custom" xmlns="http://www.w3.org/2000/svg" width="16" height="16">
+                    <path d="M7.999 2.34a4.733 4.733 0 0 0-6.604 6.778c.904 5.762a1 1 0 0 0 1.4 0a5.915-5.77a4.733 4.733 0 0 0-6.77Zm5.208 5.348l-5.208 5 0.79-5 2-5 0.7a2.734 2.734 0 0 1 3.867-3.864 1.933 1.933 0 0 0 0 5.638a1.04 1.04 0 0 0 1.756 0a2.724 2.724 0 0 1 5.122 1.294 2.727 2.727 0 0 1-.792 1.923Z"></path>
+                </svg>
+                <h4 class="title">正常运行时间</h4>
+            </div>
+            <p class="description">我们保证您 99.9% 的正常运行时间。</p>
+        </div>
+    </div>
 
+    <section id="faq" class="faq-section">
+        <h2 class="faq-title">常见问题</h2>
+        <div class="faq-item">
+            <div class="faq-question">
+                <h3>1. 什么是FunnilyClient？</h3>
+                <span class="arrow" aria-hidden="true">▼</span>
+            </div>
+            <p class="faq-answer">FunnilyClient是一款专为Minecraft玩家开发的客户端，提供了高度的自定义功能和便利的操作。</p>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">
+                <h3>2. 如何下载FunnilyClient？</h3>
+                <span class="arrow" aria-hidden="true">▼</span>
+            </div>
+            <p class="faq-answer">您可以访问我们的官方网站，在下载页面找到相应的下载链接，按照指示完成下载。</p>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">
+                <h3>3. FunnilyClient支持哪些Minecraft版本？</h3>
+                <span class="arrow" aria-hidden="true">▼</span>
+            </div>
+            <p class="faq-answer">FunnilyClient支持多个Minecraft版本，从1.8到1.19.4均可使用。</p>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">
+                <h3>4. 如何联系客服？</h3>
+                <span class="arrow" aria-hidden="true">▼</span>
+            </div>
+            <p class="faq-answer">如果您有任何问题，可以通过我们的官方网站上的联系方式与客服团队取得联系，也可以通过我们的社交媒体平台留言。</p>
+        </div>
+    </section>
+    
+    
+    <!-- Footer -->
+    <footer>
+        <p class="footer-text">&copy; <span id="year"></span> 年,FunnilyClient. 由<a href="https://www.example.com">BelazyFly</a>提供</p>
+        <p class="footer-links">
+            <a href="privacy-refund-policy.html">隐私 / 退款政策</a>
+            <a href="terms-of-service.html">服务条款</a>
+        </p>
+    </footer>
 
-
-			<content>
-				<div class="title"><i class=" mdi mdi-chart-bubble"></i>site </div>
-				<div class="projectList"><a class="projectItem a" target="_blank" href="https://blog.zyyo.net">
-						<div class="projectItemLeft">
-							<h1>博客</h1>
-							<p>记录摆烂日常</p>
-						</div>
-						<div class="projectItemRight">
-							<img src="./static/img/i1.png" alt="">
-						</div>
-
-					</a><a class="projectItem a" target="_blank" href="https://i.zyyo.net">
-						<div class="projectItemLeft">
-							<h1>云盘</h1>
-							<p>存储收集文件</p>
-						</div>
-						<div class="projectItemRight">
-							<img src="./static/img/i2.png" alt="">
-						</div>
-
-					</a><a class="projectItem a" target="_blank" href="https://zyyo.cc">
-						<div class="projectItemLeft">
-							<h1>实验室</h1>
-							<p>收集有趣html作品</p>
-						</div>
-						<div class="projectItemRight">
-							<img src="./static/img/i3.png" alt="">
-						</div>
-
-					</a></div>
-				<div class="title"><i class="mdi mdi-monitor"></i>project  (项目)</div>
-				<div class="projectList"><a class="projectItem b" target="_blank"
-						href="https://github.com/ZYYO666/homepage">
-						<div class="projectItemLeft">
-							<h1>BelazyFly主页</h1>
-							<p>本站同款</p>
-						</div>
-						<div class="projectItemRight">
-							<img src="./static/img/i5.png" alt="">
-						</div>
-
-					</a><a class="projectItem b" target="_blank" href="https://github.com/ZYYO666/ZYYO">
-						<div class="projectItemLeft">
-							<h1>BelazyFly主题</h1>
-							<p>一款ty主题</p>
-						</div>
-						<div class="projectItemRight">
-							<img src="./static/img/i6.png" alt="">
-						</div>
-
-					</a></div>
-			</content>
-		</div>
-	</div>
-
-	<footer>
-		BelazyFly © 2024  | 
-		<a href="https://www.5baike.com/cart?fid=8&gid=31"> 百科云　　</a>
-		<a id="countdown">　倒计时: 00:00 </a>
-			<a id="timer">　|　计时: 00:00</a>
-		<script src="./static/js/timer.js"></script>
-	</footer>
-	<div class="tc"><div onclick="" class="tc-main"><img class="tc-img" src="" alt="" srcset=""></div>
-	</div>
+    <script src="public/js/script.js"></script>
+    <script src="public/js/homepagedisplay.js"></script>
+    <script src="public/js/infocontainer.js"></script>
+    <script src="public/js/frequentlyaskedquestion.js"></script>
+    <script src="public/js/header.js"></script> <!-- 引入外部JavaScript -->
+    <script src="public/js/footer.js"></script>
 </body>
-<script src="./static/js/script.js"> </script>
-
-
-
-<script charset="UTF-8" id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js"></script>
-<script>LA.init({ id: "KFqltKSkJgQTGD9l", ck: "KFqltKSkJgQTGD9l" })</script>
 </html>

@@ -1,0 +1,37 @@
+.infocontainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px; /* 增加单元格之间的间距 */
+    text-align: center;
+    margin: 50px auto; /* 垂直方向的间距和水平居中 */
+    max-width: 1200px; /* 设置最大宽度，根据需要调整 */
+    padding: 0 20px; /* 添加水平内边距 */
+}
+
+.item {
+    border: 1px solid #3d3d3d;
+    padding: 20px; /* 单元格内的内边距 */
+    margin: 10px; /* 增加单元格之间的外边距 */
+    border-radius: 10px; /* 添加圆角 */
+    filter: blur(0); /* 模糊效果可以根据需要进行调整 */
+}
+
+.header {
+    display: flex;
+    align-items: flex-start; /* 更改为flex-start以将图标和标题一起向上移动 */
+}
+
+.icon-custom {
+    margin-right: 8px; /* 图标与标题之间的间距 */
+    margin-top: -2px; /* 向上移动图标，相对于标题 */
+}
+
+.title {
+    font-size: 18px; /* 确定标题的大小 */
+    margin: 0; /* 移除标题的默认边距 */
+}
+
+.description {
+    font-size: 14px; /* 确定描述的大小 */
+    color: #777777; /* 描述颜色 */
+}
